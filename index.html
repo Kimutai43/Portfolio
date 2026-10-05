@@ -42,7 +42,8 @@
     }
   </script>
 </head>
-<body class="bg-brand-bg text-slate-300 font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-400 border-t-2 border-emerald-500 bg-fixed bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.88), rgba(3, 7, 18, 0.94)), url('bg.jpg');"></body>
+<body class="bg-brand-bg text-slate-300 font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-400 border-t-2 border-emerald-500 bg-fixed bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.88), rgba(3, 7, 18, 0.94)), url('bg.jpg');">
+
   <!-- Navigation -->
   <nav class="sticky top-0 z-50 bg-brand-bg/90 backdrop-blur-md border-b border-slate-800/80">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -72,7 +73,7 @@
       <!-- Profile Picture & Status Badge -->
       <div class="flex items-center space-x-5">
         <div class="relative">
-          <img src="profile.jpg" alt="Brian Kimutai" class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-2 border-emerald-500/80 shadow-lg shadow-emerald-500/20 object-cover bg-slate-900">
+          <img src="profile.jpg" alt="Brian Kimutai" class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-2 border-emerald-500/80 shadow-lg shadow-emerald-500/20 object-cover object-top bg-slate-900">
           <span class="absolute bottom-1 right-1 w-4 h-4 bg-emerald-500 border-2 border-brand-bg rounded-full"></span>
         </div>
         <div class="space-y-2">
@@ -106,7 +107,7 @@
 
     <!-- Terminal Box Widget -->
     <div class="lg:col-span-5">
-      <div class="bg-brand-card border border-slate-800 rounded-lg shadow-2xl overflow-hidden font-mono text-xs sm:text-sm">
+      <div class="bg-brand-card/90 backdrop-blur border border-slate-800 rounded-lg shadow-2xl overflow-hidden font-mono text-xs sm:text-sm">
         <div class="bg-slate-900/80 px-4 py-3 border-b border-slate-800 flex items-center space-x-2">
           <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
           <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
@@ -136,7 +137,7 @@
   </section>
 
   <!-- 01 About Me -->
-  <section id="about" class="border-t border-slate-800/60 bg-slate-950/50 py-24">
+  <section id="about" class="border-t border-slate-800/60 bg-slate-950/60 backdrop-blur-sm py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex items-center space-x-3 mb-8">
         <span class="font-mono text-emerald-400 font-bold text-lg">01</span>
@@ -158,15 +159,15 @@
         </div>
 
         <div class="lg:col-span-5 grid grid-cols-1 gap-4 font-mono text-xs">
-          <div class="p-4 bg-brand-card border border-slate-800 rounded">
+          <div class="p-4 bg-brand-card/90 border border-slate-800 rounded">
             <span class="text-slate-500 uppercase tracking-wider block mb-1">Focus</span>
             <span class="text-white font-semibold text-sm">Offensive & Defensive Security</span>
           </div>
-          <div class="p-4 bg-brand-card border border-slate-800 rounded">
+          <div class="p-4 bg-brand-card/90 border border-slate-800 rounded">
             <span class="text-slate-500 uppercase tracking-wider block mb-1">Specialization</span>
             <span class="text-emerald-400 font-semibold text-sm">Cybersecurity & Digital Forensics</span>
           </div>
-          <div class="p-4 bg-brand-card border border-slate-800 rounded">
+          <div class="p-4 bg-brand-card/90 border border-slate-800 rounded">
             <span class="text-slate-500 uppercase tracking-wider block mb-1">Approach</span>
             <span class="text-slate-300 font-semibold text-sm">Hands-on • Analytical • Security-first</span>
           </div>
@@ -186,7 +187,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
-        <div class="p-6 bg-brand-card border border-slate-800 rounded hover:border-slate-700 transition">
+        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded hover:border-slate-700 transition">
           <h3 class="text-lg font-bold text-white mb-2">Offensive Security</h3>
           <p class="text-xs text-slate-400 mb-6 leading-relaxed">
             Penetration Testing, Vulnerability Assessment, Web Security, Ethical Hacking and Security Testing.
@@ -200,7 +201,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="p-6 bg-brand-card border border-slate-800 rounded hover:border-slate-700 transition">
+        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded hover:border-slate-700 transition">
           <h3 class="text-lg font-bold text-white mb-2">Network Security</h3>
           <p class="text-xs text-slate-400 mb-6 leading-relaxed">
             Network monitoring, traffic analysis, firewalls, IDS/IPS, network defense and secure configuration.
@@ -214,7 +215,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="p-6 bg-brand-card border border-slate-800 rounded hover:border-slate-700 transition">
+        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded hover:border-slate-700 transition">
           <h3 class="text-lg font-bold text-white mb-2">Digital Forensics & DFIR</h3>
           <p class="text-xs text-slate-400 mb-6 leading-relaxed">
             Digital evidence collection, forensic investigation, incident response and evidence preservation.
@@ -227,7 +228,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="p-6 bg-brand-card border border-slate-800 rounded hover:border-slate-700 transition">
+        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded hover:border-slate-700 transition">
           <h3 class="text-lg font-bold text-white mb-2">AI Security</h3>
           <p class="text-xs text-slate-400 mb-6 leading-relaxed">
             AI threat modeling, LLM security, prompt injection defense, RAG security and AI red teaming.
@@ -240,7 +241,7 @@
         </div>
 
         <!-- Card 5 -->
-        <div class="p-6 bg-brand-card border border-slate-800 rounded hover:border-slate-700 transition">
+        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded hover:border-slate-700 transition">
           <h3 class="text-lg font-bold text-white mb-2">Security Operations</h3>
           <p class="text-xs text-slate-400 mb-6 leading-relaxed">
             Threat detection, security monitoring, incident analysis and security event investigation.
@@ -253,7 +254,7 @@
         </div>
 
         <!-- Card 6 -->
-        <div class="p-6 bg-brand-card border border-slate-800 rounded hover:border-slate-700 transition">
+        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded hover:border-slate-700 transition">
           <h3 class="text-lg font-bold text-white mb-2">Development</h3>
           <p class="text-xs text-slate-400 mb-6 leading-relaxed">
             Security-focused application development and backend development using modern technologies.
@@ -270,7 +271,7 @@
   </section>
 
   <!-- 03 Featured Projects -->
-  <section id="projects" class="py-24 border-t border-slate-800/60 bg-slate-950/50">
+  <section id="projects" class="py-24 border-t border-slate-800/60 bg-slate-950/60 backdrop-blur-sm">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex items-center space-x-3 mb-12">
         <span class="font-mono text-emerald-400 font-bold text-lg">03</span>
@@ -280,7 +281,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Project 1 -->
-        <div class="p-6 bg-brand-card border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
+        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
           <div>
             <span class="font-mono text-xs text-emerald-400 mb-2 block">01</span>
             <h3 class="text-xl font-bold text-white mb-3">SecureBot Unencrypted File Detector</h3>
@@ -294,7 +295,7 @@
         </div>
 
         <!-- Project 2 -->
-        <div class="p-6 bg-brand-card border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
+        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
           <div>
             <span class="font-mono text-xs text-emerald-400 mb-2 block">02</span>
             <h3 class="text-xl font-bold text-white mb-3">Phishing Email Detector</h3>
@@ -308,7 +309,7 @@
         </div>
 
         <!-- Project 3 -->
-        <div class="p-6 bg-brand-card border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
+        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
           <div>
             <span class="font-mono text-xs text-emerald-400 mb-2 block">03</span>
             <h3 class="text-xl font-bold text-white mb-3">Secure Whistleblower Information System</h3>
@@ -322,7 +323,7 @@
         </div>
 
         <!-- Project 4 -->
-        <div class="p-6 bg-brand-card border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
+        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
           <div>
             <span class="font-mono text-xs text-emerald-400 mb-2 block">04</span>
             <h3 class="text-xl font-bold text-white mb-3">Cybersecurity Labs & Research</h3>
@@ -348,32 +349,32 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="p-5 bg-brand-card border border-slate-800 rounded">
+        <div class="p-5 bg-brand-card/90 backdrop-blur border border-slate-800 rounded">
           <span class="text-xs font-mono text-emerald-400 block mb-1">CLLMSE</span>
           <h3 class="text-white font-bold text-base">Certified LLM Security Expert</h3>
         </div>
 
-        <div class="p-5 bg-brand-card border border-slate-800 rounded">
+        <div class="p-5 bg-brand-card/90 backdrop-blur border border-slate-800 rounded">
           <span class="text-xs font-mono text-emerald-400 block mb-1">CAISR</span>
           <h3 class="text-white font-bold text-base">Certified AI Security & Risk</h3>
         </div>
 
-        <div class="p-5 bg-brand-card border border-slate-800 rounded">
+        <div class="p-5 bg-brand-card/90 backdrop-blur border border-slate-800 rounded">
           <span class="text-xs font-mono text-emerald-400 block mb-1">2026</span>
           <h3 class="text-white font-bold text-base">Cisco CyberOps Associate</h3>
         </div>
 
-        <div class="p-5 bg-brand-card border border-slate-800 rounded">
+        <div class="p-5 bg-brand-card/90 backdrop-blur border border-slate-800 rounded">
           <span class="text-xs font-mono text-emerald-400 block mb-1">Networking Fundamentals</span>
           <h3 class="text-white font-bold text-base">CCNA</h3>
         </div>
 
-        <div class="p-5 bg-brand-card border border-slate-800 rounded">
+        <div class="p-5 bg-brand-card/90 backdrop-blur border border-slate-800 rounded">
           <span class="text-xs font-mono text-emerald-400 block mb-1">Digital Forensics</span>
           <h3 class="text-white font-bold text-base">Digital Forensics & Incident Investigation</h3>
         </div>
 
-        <div class="p-5 bg-brand-card border border-slate-800 rounded">
+        <div class="p-5 bg-brand-card/90 backdrop-blur border border-slate-800 rounded">
           <span class="text-xs font-mono text-emerald-400 block mb-1">Cybersecurity Training</span>
           <h3 class="text-white font-bold text-base">Ethical Hacking</h3>
         </div>
@@ -382,7 +383,7 @@
   </section>
 
   <!-- 05 Contact -->
-  <section id="contact" class="py-24 border-t border-slate-800/60 bg-slate-950/50">
+  <section id="contact" class="py-24 border-t border-slate-800/60 bg-slate-950/60 backdrop-blur-sm">
     <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
       <span class="font-mono text-emerald-400 font-bold text-sm block">05 • WHAT'S NEXT?</span>
       <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Let's Connect</h2>
@@ -405,7 +406,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-900 py-8 text-center font-mono text-xs text-slate-500 space-y-2">
+  <footer class="border-t border-slate-900/80 py-8 text-center font-mono text-xs text-slate-500 space-y-2">
     <p>© 2026 Brian Kimutai. Built with HTML & Tailwind CSS.</p>
     <p class="text-slate-600">Cybersecurity • Digital Forensics • AI Security</p>
   </footer>
