@@ -6,11 +6,14 @@
   <title>Brian Kimutai | Cybersecurity & Digital Forensics</title>
   <meta name="description" content="Cybersecurity & Digital Forensics Professional portfolio of Brian Kimutai. Specializing in threat detection, DFIR, pentesting, and AI security.">
   
+  <!-- Custom SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23030712'/><text x='50%' y='65%' font-size='50' font-weight='bold' font-family='monospace' fill='%2310b981' text-anchor='middle'>BK</text></svg>">
+
   <!-- Open Graph / LinkedIn Meta -->
   <meta property="og:title" content="Brian Kimutai - Cybersecurity & Digital Forensics Portfolio">
   <meta property="og:description" content="Penetration Testing, SOC, DFIR, and AI Security Portfolio.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://github.com/Kimutai43">
+  <meta property="og:url" content="https://kimutai43.github.io/">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -96,7 +99,7 @@
       <div class="flex items-center space-x-5">
         <div class="relative">
           <img src="profile.jpg" alt="Brian Kimutai" class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-2 border-emerald-500/80 shadow-lg shadow-emerald-500/20 object-cover object-top bg-slate-900">
-          <span class="absolute bottom-1 right-1 w-4 h-4 bg-emerald-500 border-2 border-brand-bg rounded-full"></span>
+          <span class="absolute bottom-1 right-1 w-4 h-4 bg-emerald-500 border-2 border-brand-bg rounded-full" title="Active & Ready to Collaborate"></span>
         </div>
         <div class="space-y-2">
           <div class="inline-flex items-center space-x-2 px-3 py-1 text-xs font-mono font-semibold tracking-wider text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded-full">
@@ -122,38 +125,36 @@
           View My Work
         </a>
         <a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer" class="px-6 py-3 border border-slate-700 text-slate-300 rounded hover:border-slate-500 hover:text-white transition">
-          GitHub
+          GitHub Profile
         </a>
       </div>
     </div>
 
-    <!-- Terminal Box Widget -->
+    <!-- Interactive Terminal Box Widget -->
     <div class="lg:col-span-5">
-      <div class="bg-brand-card/90 backdrop-blur border border-slate-800 rounded-lg shadow-2xl overflow-hidden font-mono text-xs sm:text-sm">
-        <div class="bg-slate-900/80 px-4 py-3 border-b border-slate-800 flex items-center space-x-2">
-          <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
-          <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-          <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
-          <span class="text-slate-500 text-xs ml-2">brian@security-lab:~</span>
+      <div class="bg-brand-card/95 backdrop-blur border border-slate-800 rounded-lg shadow-2xl overflow-hidden font-mono text-xs sm:text-sm">
+        <div class="bg-slate-900/90 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+            <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+            <span class="text-slate-500 text-xs ml-2">brian@security-lab:~</span>
+          </div>
+          <span class="text-[10px] text-emerald-500/80 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">INTERACTIVE CLI</span>
         </div>
-        <div class="p-6 space-y-4">
-          <div>
-            <span class="text-emerald-400">$ whoami</span>
-            <p class="text-slate-200 mt-1">Brian Kimutai</p>
-          </div>
-          <div>
-            <span class="text-emerald-400">$ focus</span>
-            <p class="text-slate-200 mt-1">Cybersecurity & Digital Forensics</p>
-          </div>
-          <div>
-            <span class="text-emerald-400">$ skills</span>
-            <p class="text-slate-200 mt-1">Pentesting | SOC | DFIR | AI Security</p>
-          </div>
-          <div>
-            <span class="text-emerald-400">$ status</span>
-            <p class="text-slate-200 mt-1">Building & learning every day...</p>
+        
+        <!-- Terminal Output Area -->
+        <div id="terminal-body" class="p-4 h-64 overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-slate-800">
+          <div class="text-slate-400">
+            Welcome! Type <span class="text-emerald-400 font-bold">help</span> to view available CLI commands.
           </div>
         </div>
+
+        <!-- Terminal Input Bar -->
+        <form id="terminal-form" class="border-t border-slate-800/80 bg-slate-950/80 px-4 py-2 flex items-center space-x-2">
+          <span class="text-emerald-400 font-bold">$</span>
+          <input type="text" id="terminal-input" autocomplete="off" placeholder="type 'help'..." class="w-full bg-transparent text-slate-200 focus:outline-none placeholder:text-slate-600 text-xs sm:text-sm font-mono">
+        </form>
       </div>
     </div>
   </section>
@@ -190,8 +191,8 @@
             <span class="text-emerald-400 font-semibold text-sm">Cybersecurity & Digital Forensics</span>
           </div>
           <div class="p-4 bg-brand-card/90 border border-slate-800 rounded">
-            <span class="text-slate-500 uppercase tracking-wider block mb-1">Approach</span>
-            <span class="text-slate-300 font-semibold text-sm">Hands-on • Analytical • Security-first</span>
+            <span class="text-slate-500 uppercase tracking-wider block mb-1">Standard</span>
+            <span class="text-slate-300 font-semibold text-sm">RFC 9116 / Security.txt Compliant</span>
           </div>
         </div>
       </div>
@@ -342,23 +343,35 @@
     </div>
   </section>
 
-  <!-- 04 Featured Projects -->
+  <!-- 04 Featured Projects (Filterable) -->
   <section id="projects" class="py-24 border-t border-slate-800/60">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="flex items-center space-x-3 mb-12">
-        <span class="font-mono text-emerald-400 font-bold text-lg">04</span>
-        <h2 class="text-2xl font-bold text-white tracking-tight">Featured Projects</h2>
-        <div class="h-px bg-slate-800 flex-1 ml-4"></div>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-12">
+        <div class="flex items-center space-x-3">
+          <span class="font-mono text-emerald-400 font-bold text-lg">04</span>
+          <h2 class="text-2xl font-bold text-white tracking-tight">Featured Projects</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2 font-mono text-xs">
+          <button class="filter-btn active-filter px-3 py-1.5 rounded border border-emerald-500 bg-emerald-500/20 text-emerald-400" data-filter="all">All</button>
+          <button class="filter-btn px-3 py-1.5 rounded border border-slate-800 bg-brand-card text-slate-400 hover:text-white hover:border-slate-700 transition" data-filter="offensive">Offensive</button>
+          <button class="filter-btn px-3 py-1.5 rounded border border-slate-800 bg-brand-card text-slate-400 hover:text-white hover:border-slate-700 transition" data-filter="dfir">DFIR & Detection</button>
+          <button class="filter-btn px-3 py-1.5 rounded border border-slate-800 bg-brand-card text-slate-400 hover:text-white hover:border-slate-700 transition" data-filter="aisec">AI Security</button>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Project 1 -->
-        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
+        <div class="project-card p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition" data-category="dfir">
           <div>
-            <span class="font-mono text-xs text-emerald-400 mb-2 block">01</span>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-mono text-xs text-emerald-400">01 • DFIR / Security Tool</span>
+              <span class="text-[10px] font-mono text-slate-500 border border-slate-800 px-2 py-0.5 rounded">Python</span>
+            </div>
             <h3 class="text-xl font-bold text-white mb-3">SecureBot Unencrypted File Detector</h3>
             <p class="text-slate-400 text-sm leading-relaxed mb-6">
-              A security-focused project designed to identify potentially unencrypted or insecure files and improve data protection.
+              A security tool designed to systematically scan storage paths, identify unencrypted files containing sensitive data, and report configuration risks.
             </p>
           </div>
           <a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-mono text-emerald-400 hover:underline">
@@ -367,12 +380,15 @@
         </div>
 
         <!-- Project 2 -->
-        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
+        <div class="project-card p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition" data-category="dfir">
           <div>
-            <span class="font-mono text-xs text-emerald-400 mb-2 block">02</span>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-mono text-xs text-emerald-400">02 • Detection & SOC</span>
+              <span class="text-[10px] font-mono text-slate-500 border border-slate-800 px-2 py-0.5 rounded">Python / Regex</span>
+            </div>
             <h3 class="text-xl font-bold text-white mb-3">Phishing Email Detector</h3>
             <p class="text-slate-400 text-sm leading-relaxed mb-6">
-              A cybersecurity project focused on detecting suspicious characteristics associated with phishing emails.
+              A automated analyzer designed to evaluate email headers, domain reputational markers, and malicious URL patterns associated with phishing attacks.
             </p>
           </div>
           <a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-mono text-emerald-400 hover:underline">
@@ -381,12 +397,15 @@
         </div>
 
         <!-- Project 3 -->
-        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
+        <div class="project-card p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition" data-category="offensive">
           <div>
-            <span class="font-mono text-xs text-emerald-400 mb-2 block">03</span>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-mono text-xs text-emerald-400">03 • Web Security & Encryption</span>
+              <span class="text-[10px] font-mono text-slate-500 border border-slate-800 px-2 py-0.5 rounded">Node.js / Cryptography</span>
+            </div>
             <h3 class="text-xl font-bold text-white mb-3">Secure Whistleblower Information System</h3>
             <p class="text-slate-400 text-sm leading-relaxed mb-6">
-              A secure information system project focused on protecting sensitive whistleblower information and improving confidentiality.
+              An encrypted communication platform created to preserve informant anonymity, implement secure message exchange, and safeguard sensitive disclosures.
             </p>
           </div>
           <a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-mono text-emerald-400 hover:underline">
@@ -395,12 +414,15 @@
         </div>
 
         <!-- Project 4 -->
-        <div class="p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition">
+        <div class="project-card p-6 bg-brand-card/90 backdrop-blur border border-slate-800 rounded flex flex-col justify-between hover:border-slate-700 transition" data-category="aisec">
           <div>
-            <span class="font-mono text-xs text-emerald-400 mb-2 block">04</span>
-            <h3 class="text-xl font-bold text-white mb-3">Cybersecurity Labs & Research</h3>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-mono text-xs text-emerald-400">04 • AI Security & LLM Defense</span>
+              <span class="text-[10px] font-mono text-slate-500 border border-slate-800 px-2 py-0.5 rounded">Prompt Injection / Threat Modeling</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">LLM Prompt Injection Guardrail Lab</h3>
             <p class="text-slate-400 text-sm leading-relaxed mb-6">
-              Hands-on security work covering penetration testing, network defense, digital forensics, malware analysis and security operations.
+              Security research and testing framework evaluating prompt injection vectors, direct/indirect LLM compromise, and defensive guardrail filtering.
             </p>
           </div>
           <a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-mono text-emerald-400 hover:underline">
@@ -484,40 +506,83 @@
     </div>
   </section>
 
-  <!-- 06 Contact -->
+  <!-- 06 Contact & Message Form -->
   <section id="contact" class="py-24 border-t border-slate-800/60">
-    <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
-      <span class="font-mono text-emerald-400 font-bold text-sm block">06 • WHAT'S NEXT?</span>
-      <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Let's Connect</h2>
-      <p class="text-slate-400 max-w-xl mx-auto text-sm leading-relaxed">
-        Interested in cybersecurity, security research, collaboration, or professional opportunities? Feel free to reach out directly.
-      </p>
+    <div class="max-w-4xl mx-auto px-6 space-y-12">
+      
+      <div class="text-center space-y-4">
+        <span class="font-mono text-emerald-400 font-bold text-sm block">06 • WHAT'S NEXT?</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Let's Connect</h2>
+        <p class="text-slate-400 max-w-xl mx-auto text-sm leading-relaxed">
+          Interested in cybersecurity, security research, collaboration, or professional opportunities? Send a direct message below or reach out via email.
+        </p>
+      </div>
 
-      <div class="pt-6 flex flex-wrap justify-center gap-4 sm:gap-6 font-mono text-sm">
-        <a href="mailto:kimutaibrian.kb@gmail.com" class="px-6 py-3 border border-emerald-500/30 rounded bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition flex items-center gap-2">
+      <!-- Quick Contact Pills -->
+      <div class="flex flex-wrap justify-center gap-4 font-mono text-sm">
+        <a href="mailto:kimutaibrian.kb@gmail.com" class="px-5 py-2.5 border border-emerald-500/30 rounded bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition flex items-center gap-2">
           <span>📧</span> kimutaibrian.kb@gmail.com
         </a>
-        <a href="tel:+254722475396" class="px-6 py-3 border border-slate-800 rounded bg-brand-card text-slate-300 hover:border-emerald-500/50 hover:text-emerald-400 transition flex items-center gap-2">
+        <a href="tel:+254722475396" class="px-5 py-2.5 border border-slate-800 rounded bg-brand-card text-slate-300 hover:border-emerald-500/50 hover:text-emerald-400 transition flex items-center gap-2">
           <span>📞</span> +254 722 475 396
         </a>
-        <a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer" class="px-6 py-3 border border-slate-800 rounded bg-brand-card text-slate-300 hover:border-emerald-500/50 hover:text-emerald-400 transition">
+        <a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 border border-slate-800 rounded bg-brand-card text-slate-300 hover:border-emerald-500/50 hover:text-emerald-400 transition">
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/kimbriankim" target="_blank" rel="noopener noreferrer" class="px-6 py-3 border border-slate-800 rounded bg-brand-card text-slate-300 hover:border-emerald-500/50 hover:text-emerald-400 transition">
+        <a href="https://www.linkedin.com/in/kimbriankim" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 border border-slate-800 rounded bg-brand-card text-slate-300 hover:border-emerald-500/50 hover:text-emerald-400 transition">
           LinkedIn
         </a>
       </div>
+
+      <!-- Functional Web3Forms Contact Form -->
+      <div class="p-8 bg-brand-card/90 border border-slate-800 rounded-lg max-w-2xl mx-auto">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+          
+          <!-- Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="479d8402-bce6-4696-a3d9-a0086bac1d9a">
+          <input type="hidden" name="subject" value="New Portfolio Contact Message - Brian Kimutai">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block font-mono text-xs text-slate-400 mb-2">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-emerald-500 transition">
+            </div>
+            <div>
+              <label for="email" class="block font-mono text-xs text-slate-400 mb-2">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-emerald-500 transition">
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="block font-mono text-xs text-slate-400 mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Hello Brian, I would like to connect regarding..." class="w-full bg-slate-950 border border-slate-800 rounded px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-emerald-500 transition"></textarea>
+          </div>
+
+          <button type="submit" id="form-btn" class="w-full py-3.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-mono font-bold text-sm rounded transition shadow-lg shadow-emerald-500/10">
+            Send Message →
+          </button>
+
+          <p id="form-result" class="text-center font-mono text-xs hidden"></p>
+        </form>
+      </div>
+
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="border-t border-slate-900/80 py-8 text-center font-mono text-xs text-slate-500 space-y-2">
     <p>© 2026 Brian Kimutai. Built with HTML & Tailwind CSS.</p>
-    <p class="text-slate-600">Cybersecurity • Digital Forensics • AI Security</p>
+    <div class="flex justify-center space-x-4 text-slate-600">
+      <a href="/.well-known/security.txt" class="hover:text-emerald-400 transition">security.txt</a>
+      <span>•</span>
+      <span>Cybersecurity & Digital Forensics</span>
+    </div>
   </footer>
 
-  <!-- Mobile Navigation Script -->
+  <!-- Scripts -->
   <script>
+    // 1. Mobile Navigation Toggle
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -529,6 +594,125 @@
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // 2. Interactive Terminal CLI
+    const termBody = document.getElementById('terminal-body');
+    const termForm = document.getElementById('terminal-form');
+    const termInput = document.getElementById('terminal-input');
+
+    const commands = {
+      help: "Available commands:\n  whoami      - Short intro\n  skills      - Key technical capabilities\n  projects    - Highlighted portfolio projects\n  certs       - Professional certifications\n  experience  - Career timeline summary\n  contact     - Email & phone details\n  security    - Responsible vulnerability disclosure info\n  matrix      - Start digital rain effect\n  clear       - Clear terminal window",
+      whoami: "Brian Kimutai | Cybersecurity & Digital Forensics Specialist\nSpecialized in threat detection, web pentesting, digital investigations, and AI security.",
+      skills: "• Offensive: Burp Suite, Nmap, Metasploit, SQLMap\n• Defensive & Ops: Splunk, Wireshark, Cisco, IDS/IPS\n• DFIR: Autopsy, Forensic Evidence Analysis\n• AI Security: LLM Threat Modeling, Prompt Injection Defense",
+      projects: "1. SecureBot Unencrypted File Detector\n2. Phishing Email Detector\n3. Secure Whistleblower Information System\n4. LLM Prompt Injection Guardrail Lab",
+      certs: "CLLMSE (Certified LLM Security Expert)\nCAISR (Certified AI Security & Risk)\nOffensive Agent AI | Cisco CyberOps | CCNA | ICDFA",
+      experience: "2024-Pres: Cybersecurity & Digital Forensics Specialist\n2022-2024: IT Support & Network Security Analyst",
+      contact: "Email: kimutaibrian.kb@gmail.com\nPhone: +254 722 475 396\nGitHub: github.com/Kimutai43",
+      security: "Responsible Disclosure: Report security concerns to kimutaibrian.kb@gmail.com or view /.well-known/security.txt",
+      matrix: "Wake up, Neo... The matrix has you. 🟢🟢🟢"
+    };
+
+    termForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const inputVal = termInput.value.trim().toLowerCase();
+      if (!inputVal) return;
+
+      // Echo command
+      const echoDiv = document.createElement('div');
+      echoDiv.className = 'text-slate-300';
+      echoDiv.innerHTML = `<span class="text-emerald-400 font-bold">$</span> ${termInput.value}`;
+      termBody.appendChild(echoDiv);
+
+      // Process response
+      const responseDiv = document.createElement('div');
+      responseDiv.className = 'text-slate-400 whitespace-pre-wrap pl-2 border-l border-emerald-500/30 my-1';
+
+      if (inputVal === 'clear') {
+        termBody.innerHTML = '';
+      } else if (commands[inputVal]) {
+        responseDiv.textContent = commands[inputVal];
+        termBody.appendChild(responseDiv);
+      } else {
+        responseDiv.innerHTML = `Command not recognized: '<span class="text-red-400">${inputVal}</span>'. Type <span class="text-emerald-400">help</span> for commands.`;
+        termBody.appendChild(responseDiv);
+      }
+
+      termInput.value = '';
+      termBody.scrollTop = termBody.scrollHeight;
+    });
+
+    // 3. Project Filter Tabs
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Reset active button styling
+        filterBtns.forEach(b => {
+          b.classList.remove('border-emerald-500', 'bg-emerald-500/20', 'text-emerald-400');
+          b.classList.add('border-slate-800', 'bg-brand-card', 'text-slate-400');
+        });
+
+        // Set clicked active button styling
+        btn.classList.remove('border-slate-800', 'bg-brand-card', 'text-slate-400');
+        btn.classList.add('border-emerald-500', 'bg-emerald-500/20', 'text-emerald-400');
+
+        const filter = btn.getAttribute('data-filter');
+
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 4. Contact Form Submission (Web3Forms AJAX)
+    const contactForm = document.getElementById('contact-form');
+    const formResult = document.getElementById('form-result');
+    const formBtn = document.getElementById('form-btn');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      formBtn.disabled = true;
+      formBtn.textContent = 'Sending...';
+
+      const formData = new FormData(contactForm);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+      .then(async (response) => {
+        let res = await response.json();
+        if (response.status == 200) {
+          formResult.classList.remove('hidden', 'text-red-400');
+          formResult.classList.add('text-emerald-400');
+          formResult.textContent = '✅ Message sent successfully! I will get back to you soon.';
+          contactForm.reset();
+        } else {
+          throw new Error(res.message);
+        }
+      })
+      .catch(error => {
+        formResult.classList.remove('hidden', 'text-emerald-400');
+        formResult.classList.add('text-red-400');
+        formResult.textContent = '❌ Message sent via mail client fallback or check key.';
+        window.location.href = `mailto:kimutaibrian.kb@gmail.com?subject=${encodeURIComponent(object.name + ' - Contact Form')}&body=${encodeURIComponent(object.message)}`;
+      })
+      .then(function() {
+        formBtn.disabled = false;
+        formBtn.textContent = 'Send Message →';
       });
     });
   </script>
