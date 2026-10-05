@@ -51,6 +51,7 @@
         BK<span class="text-emerald-500">.</span>
       </a>
       
+      <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
         <a href="#home" class="hover:text-emerald-400 transition">Home</a>
         <a href="#about" class="hover:text-emerald-400 transition">About</a>
@@ -61,9 +62,29 @@
         <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
       </div>
 
-      <a href="Brian_Kimutai_Kochilinyang_CV.pdf" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-xs font-mono font-medium text-emerald-400 border border-emerald-500/40 rounded hover:bg-emerald-500/10 transition">
-        CV / Resume [PDF]
-      </a>
+      <div class="flex items-center space-x-4">
+        <a href="Brian_Kimutai_Kochilinyang_CV.pdf" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-xs font-mono font-medium text-emerald-400 border border-emerald-500/40 rounded hover:bg-emerald-500/10 transition">
+          CV / Resume [PDF]
+        </a>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button id="menu-btn" aria-label="Toggle Menu" class="md:hidden text-slate-300 hover:text-emerald-400 focus:outline-none p-2 rounded">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-card/95 border-b border-slate-800 px-6 py-4 space-y-3 text-sm font-medium font-mono shadow-xl">
+      <a href="#home" class="mobile-link block hover:text-emerald-400 transition py-1">Home</a>
+      <a href="#about" class="mobile-link block hover:text-emerald-400 transition py-1">About</a>
+      <a href="#experience" class="mobile-link block hover:text-emerald-400 transition py-1">Experience</a>
+      <a href="#skills" class="mobile-link block hover:text-emerald-400 transition py-1">Skills</a>
+      <a href="#projects" class="mobile-link block hover:text-emerald-400 transition py-1">Projects</a>
+      <a href="#certifications" class="mobile-link block hover:text-emerald-400 transition py-1">Certifications</a>
+      <a href="#contact" class="mobile-link block hover:text-emerald-400 transition py-1">Contact</a>
     </div>
   </nav>
 
@@ -494,6 +515,23 @@
     <p>© 2026 Brian Kimutai. Built with HTML & Tailwind CSS.</p>
     <p class="text-slate-600">Cybersecurity • Digital Forensics • AI Security</p>
   </footer>
+
+  <!-- Mobile Navigation Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
 
 </body>
 </html>
