@@ -1,0 +1,5 @@
+Contact: mailto:kimutaibrian.kb@gmail.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://kimutai43.github.io/Portfolio/.well-known/security.txt
+Policy: https://kimutai43.github.io/Portfolio/
