@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root{color-scheme:dark;--bg:#080d17;--panel:#0e1624;--panel2:#111d2d;--line:#203047;--text:#e8eef7;--muted:#9aa9bd;--soft:#c1ccda;--accent:#7ce7c1;--accent2:#5bc7d8;--mono:'DM Mono',monospace;--sans:'Manrope',system-ui,sans-serif;--max:1160px;--radius:18px;--shadow:0 24px 70px rgba(0,0,0,.28)}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:radial-gradient(ellipse at 78% 5%,rgba(50,117,132,.15),transparent 35%),radial-gradient(ellipse at 4% 35%,rgba(42,93,116,.12),transparent 32%),var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}button,input,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin-inline:auto}.skip{position:absolute;left:-9999px;top:8px;background:var(--accent);color:#06110f;padding:10px 14px;border-radius:8px;z-index:100}.skip:focus{left:12px}.mono,.eyebrow,.tag,.date,.terminal-label{font-family:var(--mono)}.eyebrow{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
@@ -35,15 +37,26 @@
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
   </style>
 </head>
+
 <body>
   <a class="skip" href="#main">Skip to content</a>
+
   <header class="topbar">
     <div class="wrap nav">
       <a class="brand" href="#home" aria-label="Brian Kimutai home">BK<b>.</b></a>
+
       <nav class="navlinks" id="navlinks" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="nav-cta" href="mailto:kimutaibrian.kb@gmail.com?subject=Request%20for%20CV">Request CV ↗</a>
+
+      <a class="nav-cta" href="Brian_Kimutai_Kochilinyang_CV.pdf" download>Download CV ↓</a>
+
       <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Open navigation">☰</button>
     </div>
   </header>
@@ -55,32 +68,67 @@
         <h1>Brian <span>Kimutai.</span></h1>
         <p class="role">Cybersecurity &amp; Digital Forensics Professional</p>
         <p class="intro">I work across security operations, endpoint and infrastructure security, incident investigation, and practical security automation. I enjoy turning technical findings into clear evidence, actionable remediation, and tools that make systems more resilient.</p>
+
         <div class="hero-actions">
           <a class="button primary" href="#projects">Explore my work <span>↘</span></a>
           <a class="button ghost" href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a>
+          <a class="button ghost" href="Brian_Kimutai_Kochilinyang_CV.pdf" download>Download CV ↓</a>
         </div>
-        <div class="social-row"><a href="mailto:kimutaibrian.kb@gmail.com">EMAIL</a><a href="https://www.linkedin.com/in/kimbriankim" target="_blank" rel="noopener noreferrer">LINKEDIN</a><a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer">GITHUB</a><span>KENYA · OPEN TO OPPORTUNITIES</span></div>
+
+        <div class="social-row">
+          <a href="mailto:kimutaibrian.kb@gmail.com">EMAIL</a>
+          <a href="https://www.linkedin.com/in/kimbriankim" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+          <a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer">GITHUB</a>
+          <span>KENYA · OPEN TO OPPORTUNITIES</span>
+        </div>
       </div>
+
       <div class="hero-visual">
-        <div class="portrait-frame"><img class="portrait" src="profile.jpg" alt="Portrait of Brian Kimutai" width="700" height="760"><div class="visual-caption"><span>SECURITY PRACTITIONER / BUILDER</span><strong>STATUS: LEARNING + BUILDING</strong></div></div>
+        <div class="portrait-frame">
+          <img class="portrait" src="profile.jpg" alt="Portrait of Brian Kimutai" width="700" height="760">
+          <div class="visual-caption">
+            <span>SECURITY PRACTITIONER / BUILDER</span>
+            <strong>STATUS: LEARNING + BUILDING</strong>
+          </div>
+        </div>
+
         <div class="terminal" aria-label="Interactive portfolio terminal">
-          <div class="terminal-top"><span class="dots"><i></i><i></i><i></i></span><span>brian@security-lab:~</span><span class="terminal-label">PORTFOLIO CLI</span></div>
+          <div class="terminal-top">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span>brian@security-lab:~</span>
+            <span class="terminal-label">PORTFOLIO CLI</span>
+          </div>
           <div class="terminal-body" id="terminal-body" aria-live="polite"><span class="accent">Welcome.</span> Type <span class="accent">help</span> to explore the portfolio commands.</div>
-          <form class="terminal-form" id="terminal-form"><label for="terminal-input">$</label><input id="terminal-input" type="text" autocomplete="off" spellcheck="false" placeholder="help · skills · projects"><button type="submit" class="terminal-label" style="background:none;border:0;color:var(--accent);cursor:pointer">RUN ↵</button></form>
+          <form class="terminal-form" id="terminal-form">
+            <label for="terminal-input">$</label>
+            <input id="terminal-input" type="text" autocomplete="off" spellcheck="false" placeholder="help · skills · projects">
+            <button type="submit" class="terminal-label" style="background:none;border:0;color:var(--accent);cursor:pointer">RUN ↵</button>
+          </form>
         </div>
       </div>
     </section>
 
     <section id="about">
       <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">01 / Profile</div><h2>Security with a practical mindset.</h2></div><p>A profile built around hands-on support, defensive security, investigation, and continuous technical development.</p></div>
+        <div class="section-head">
+          <div><div class="eyebrow">01 / Profile</div><h2>Security with a practical mindset.</h2></div>
+          <p>A profile built around hands-on support, defensive security, investigation, and continuous technical development.</p>
+        </div>
+
         <div class="about-grid">
           <div class="prose">
             <p>I am a cybersecurity and digital forensics professional with experience supporting IT environments and strengthening security controls. My work has included security monitoring, endpoint protection, access control, vulnerability follow-up, log analysis, incident escalation, and technical troubleshooting.</p>
             <p>I have worked with security and infrastructure technologies including Splunk, Microsoft Defender, SentinelOne, Microsoft Intune, Windows, Ubuntu Server, VirtualBox, Wireshark, Nmap, Autopsy, and Python-based automation.</p>
             <p>Outside operational work, I build practical tools and labs to deepen my understanding of Linux security, application security, detection engineering, and digital investigations. I value clear documentation, repeatable testing, and evidence-led conclusions.</p>
-            <div class="stats"><div class="stat"><strong>SOC</strong><span>Monitoring &amp; response</span></div><div class="stat"><strong>DFIR</strong><span>Evidence &amp; investigation</span></div><div class="stat"><strong>Linux</strong><span>System auditing</span></div><div class="stat"><strong>Python</strong><span>Security automation</span></div></div>
+
+            <div class="stats">
+              <div class="stat"><strong>SOC</strong><span>Monitoring &amp; response</span></div>
+              <div class="stat"><strong>DFIR</strong><span>Evidence &amp; investigation</span></div>
+              <div class="stat"><strong>Linux</strong><span>System auditing</span></div>
+              <div class="stat"><strong>Python</strong><span>Security automation</span></div>
+            </div>
           </div>
+
           <div class="focus-list">
             <div class="focus-item"><small>Primary focus</small><strong>Security Operations &amp; Incident Response</strong></div>
             <div class="focus-item"><small>Technical focus</small><strong>Endpoint, Linux &amp; Infrastructure Security</strong></div>
@@ -93,19 +141,75 @@
 
     <section id="experience">
       <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">02 / Career</div><h2>Professional experience.</h2></div><p>Selected responsibilities across security engineering, IT support, and security operations.</p></div>
+        <div class="section-head">
+          <div><div class="eyebrow">02 / Career</div><h2>Professional experience.</h2></div>
+          <p>Selected responsibilities across security engineering, IT support, and security operations.</p>
+        </div>
+
         <div class="timeline">
-          <article class="job"><div class="job-meta"><b>APR 2026 — PRESENT</b>Eldoret, Kenya</div><div><h3>Security Engineer (Volunteer)</h3><p class="org">Fortitrust Solutions</p><ul><li>Contribute to security operations activities, including monitoring, threat intelligence, detection engineering, and incident-response workflows.</li><li>Support Ubuntu Server administration, uptime monitoring, Active Directory and Group Policy, and infrastructure security tasks.</li><li>Develop and support automation workflows while working across Microsoft 365, cloud infrastructure, virtualization, and VoIP environments.</li></ul></div></article>
-          <article class="job"><div class="job-meta"><b>JAN 2026 — MAR 2026</b>Eldoret, Kenya</div><div><h3>IT &amp; Security Analyst — Attachment</h3><p class="org">Kenya Revenue Authority (KRA)</p><ul><li>Supported security monitoring and log review using Splunk, with endpoint protection and investigation workflows involving Microsoft Defender.</li><li>Worked with Microsoft Intune endpoint security policies, Google Workspace administration, firewall administration, and access-control reviews.</li><li>Assisted with vulnerability follow-up, endpoint hardening, patching, backup restoration, configuration review, and incident escalation.</li><li>Used VirtualBox for virtualization tasks and supported technical troubleshooting and documentation.</li></ul></div></article>
-          <article class="job"><div class="job-meta"><b>SEP 2024 — DEC 2025</b>Kenya</div><div><h3>IT Support Technician (Security Focus)</h3><p class="org">Lendplus Credit Limited</p><ul><li>Delivered Tier 2 technical support and supported Windows/macOS device onboarding through Microsoft Intune and manual configuration.</li><li>Supported Microsoft 365 administration, endpoint monitoring with SentinelOne, threat identification, and escalation.</li><li>Applied password and MFA controls, secure network-access practices, and endpoint troubleshooting.</li><li>Supported CCTV and alarm monitoring alongside day-to-day IT service operations.</li></ul></div></article>
-          <article class="job"><div class="job-meta"><b>DEC 2024 — PRESENT</b>Kenya</div><div><h3>Python Developer</h3><p class="org">Zetech University</p><ul><li>Build and refine Python-based applications and practical development projects.</li><li>Apply programming, debugging, API integration, and secure development concepts through project work.</li></ul></div></article>
+          <article class="job">
+            <div class="job-meta"><b>APR 2026 — PRESENT</b>Eldoret, Kenya</div>
+            <div>
+              <h3>Security Engineer (Volunteer)</h3>
+              <p class="org">Fortitrust Solutions</p>
+              <ul>
+                <li>Contribute to security operations activities, including monitoring, threat intelligence, detection engineering, and incident-response workflows.</li>
+                <li>Support Ubuntu Server administration, uptime monitoring, Active Directory and Group Policy, and infrastructure security tasks.</li>
+                <li>Develop and support automation workflows while working across Microsoft 365, cloud infrastructure, virtualization, and VoIP environments.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-meta"><b>JAN 2026 — MAR 2026</b>Eldoret, Kenya</div>
+            <div>
+              <h3>IT &amp; Security Analyst — Attachment</h3>
+              <p class="org">Kenya Revenue Authority (KRA)</p>
+              <ul>
+                <li>Supported security monitoring and log review using Splunk, with endpoint protection and investigation workflows involving Microsoft Defender.</li>
+                <li>Worked with Microsoft Intune endpoint security policies, Google Workspace administration, firewall administration, and access-control reviews.</li>
+                <li>Assisted with vulnerability follow-up, endpoint hardening, patching, backup restoration, configuration review, and incident escalation.</li>
+                <li>Used VirtualBox for virtualization tasks and supported technical troubleshooting and documentation.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-meta"><b>SEP 2024 — DEC 2025</b>Kenya</div>
+            <div>
+              <h3>IT Support Technician (Security Focus)</h3>
+              <p class="org">Lendplus Credit Limited</p>
+              <ul>
+                <li>Delivered Tier 2 technical support and supported Windows/macOS device onboarding through Microsoft Intune and manual configuration.</li>
+                <li>Supported Microsoft 365 administration, endpoint monitoring with SentinelOne, threat identification, and escalation.</li>
+                <li>Applied password and MFA controls, secure network-access practices, and endpoint troubleshooting.</li>
+                <li>Supported CCTV and alarm monitoring alongside day-to-day IT service operations.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-meta"><b>DEC 2024 — PRESENT</b>Kenya</div>
+            <div>
+              <h3>Python Developer</h3>
+              <p class="org">Zetech University</p>
+              <ul>
+                <li>Build and refine Python-based applications and practical development projects.</li>
+                <li>Apply programming, debugging, API integration, and secure development concepts through project work.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="skills">
       <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">03 / Capabilities</div><h2>Technical toolkit.</h2></div><p>Tools and practices I have used across work, training, and hands-on projects.</p></div>
+        <div class="section-head">
+          <div><div class="eyebrow">03 / Capabilities</div><h2>Technical toolkit.</h2></div>
+          <p>Tools and practices I have used across work, training, and hands-on projects.</p>
+        </div>
+
         <div class="skill-grid">
           <article class="skill-card"><div class="skill-icon">01 / DETECT</div><h3>Security Operations</h3><p>Monitoring, alert triage, log analysis, threat intelligence, and incident escalation.</p><div class="chips"><span class="chip">Splunk</span><span class="chip">Microsoft Defender</span><span class="chip">SentinelOne</span><span class="chip">MITRE ATT&amp;CK</span></div></article>
           <article class="skill-card"><div class="skill-icon">02 / INVESTIGATE</div><h3>Digital Forensics &amp; DFIR</h3><p>Evidence handling, forensic analysis, incident investigation, and technical reporting.</p><div class="chips"><span class="chip">Autopsy</span><span class="chip">Wireshark</span><span class="chip">IOC Analysis</span><span class="chip">Evidence Preservation</span></div></article>
@@ -119,15 +223,31 @@
 
     <section id="projects">
       <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">04 / Selected work</div><h2>Projects &amp; technical labs.</h2></div><p>Practical builds that demonstrate investigation workflows, system auditing, and security automation. Project status is stated transparently.</p></div>
-        <div class="filters" role="group" aria-label="Filter projects"><button class="filter" data-filter="all" aria-pressed="true">All projects</button><button class="filter" data-filter="linux" aria-pressed="false">Linux &amp; automation</button><button class="filter" data-filter="appsec" aria-pressed="false">Application security</button><button class="filter" data-filter="tools" aria-pressed="false">Security tools</button></div>
+        <div class="section-head">
+          <div><div class="eyebrow">04 / Selected work</div><h2>Projects &amp; technical labs.</h2></div>
+          <p>Practical builds that demonstrate investigation workflows, system auditing, and security automation. Project status is stated transparently.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter" data-filter="all" aria-pressed="true">All projects</button>
+          <button class="filter" data-filter="linux" aria-pressed="false">Linux &amp; automation</button>
+          <button class="filter" data-filter="appsec" aria-pressed="false">Application security</button>
+          <button class="filter" data-filter="tools" aria-pressed="false">Security tools</button>
+        </div>
+
         <div class="project-grid" style="margin-top:18px">
           <article class="project" data-category="linux"><div class="project-top"><span class="project-type">01 / Linux security toolkit</span><span class="status">IN DEVELOPMENT</span></div><h3>Spyrax Linux Sentinel</h3><p>A modular Bash-based Linux auditing toolkit. Current work includes reconnaissance, user auditing, SSH configuration review, authentication analysis, a findings engine, and HTML reporting. Additional audit modules are being developed and validated.</p><div class="chips"><span class="chip">Kali Linux</span><span class="chip">Bash</span><span class="chip">Python</span><span class="chip">HTML Reports</span></div><a class="project-link" href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer">Explore GitHub profile ↗</a></article>
+
           <article class="project" data-category="linux"><div class="project-top"><span class="project-type">02 / Backup &amp; recovery</span><span class="status">LAB PROJECT</span></div><h3>BashVault</h3><p>A Bash backup and restore utility with dry-run and explicit apply modes, compressed archive handling, and archive-content verification. Designed to make backup and restore actions more deliberate and auditable.</p><div class="chips"><span class="chip">Bash</span><span class="chip">Linux</span><span class="chip">tar.gz</span><span class="chip">Restore Validation</span></div><a class="project-link" href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer">Explore GitHub profile ↗</a></article>
+
           <article class="project" data-category="appsec"><div class="project-top"><span class="project-type">03 / Web application security</span><span class="status">PROJECT</span></div><h3>SQL Injection Detection Tool</h3><p>A FastAPI-based application security project combining request analysis, JWT authentication, an interactive dashboard, anomaly-detection functionality, and PDF reporting.</p><div class="chips"><span class="chip">FastAPI</span><span class="chip">JWT</span><span class="chip">Chart.js</span><span class="chip">Python</span></div><a class="project-link" href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer">Explore GitHub profile ↗</a></article>
+
           <article class="project" data-category="tools"><div class="project-top"><span class="project-type">04 / Security utility</span><span class="status">PROJECT</span></div><h3>Flask Port Scanner</h3><p>A lightweight web interface for a Python port-scanning utility, built to explore network reconnaissance concepts and present scan output through a simple Flask application.</p><div class="chips"><span class="chip">Python 3.13</span><span class="chip">Flask</span><span class="chip">Networking</span></div><a class="project-link" href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer">Explore GitHub profile ↗</a></article>
+
           <article class="project" data-category="appsec"><div class="project-top"><span class="project-type">05 / Secure reporting workflow</span><span class="status">PROJECT</span></div><h3>Secure Kenya Report</h3><p>A reporting-oriented application concept developed with Lovable, focused on a clear user workflow for submitting and handling security-related reports.</p><div class="chips"><span class="chip">Lovable</span><span class="chip">Product Design</span><span class="chip">Secure Workflows</span></div><a class="project-link" href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer">View developer profile ↗</a></article>
+
           <article class="project" data-category="tools"><div class="project-top"><span class="project-type">06 / Email threat analysis</span><span class="status">PUBLIC REPOSITORY</span></div><h3>Phishing Email Detector</h3><p>A project for examining suspicious email indicators and phishing-related patterns. See the public repository for implementation details and current capabilities.</p><div class="chips"><span class="chip">Email Security</span><span class="chip">Python</span><span class="chip">Threat Analysis</span></div><a class="project-link" href="https://github.com/Kimutai43/Phishing-Email-Detector" target="_blank" rel="noopener noreferrer">View repository ↗</a></article>
+
           <article class="project" data-category="tools"><div class="project-top"><span class="project-type">07 / File security</span><span class="status">PUBLIC REPOSITORY</span></div><h3>SecureBot — Unencrypted File Detector</h3><p>A security-focused utility project exploring detection of potentially sensitive files that are not protected by encryption.</p><div class="chips"><span class="chip">File Security</span><span class="chip">Detection</span><span class="chip">Security Automation</span></div><a class="project-link" href="https://github.com/Kimutai43/SecureBot-Unencrypted-File-Detector" target="_blank" rel="noopener noreferrer">View repository ↗</a></article>
         </div>
       </div>
@@ -135,7 +255,11 @@
 
     <section id="education">
       <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">05 / Education</div><h2>Education &amp; continued learning.</h2></div><p>Formal study supported by ongoing hands-on labs, technical projects, and professional training.</p></div>
+        <div class="section-head">
+          <div><div class="eyebrow">05 / Education</div><h2>Education &amp; continued learning.</h2></div>
+          <p>Formal study supported by ongoing hands-on labs, technical projects, and professional training.</p>
+        </div>
+
         <div class="education-grid">
           <article class="education"><div class="eyebrow">Completed</div><h3>Diploma in Cybersecurity &amp; Forensics</h3><p>Zetech University</p></article>
           <article class="education"><div class="eyebrow">In progress</div><h3>Bachelor of Science in Cybersecurity &amp; Forensics</h3><p>Zetech University · Continuing studies</p></article>
@@ -145,7 +269,11 @@
 
     <section id="certifications">
       <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">06 / Credentials</div><h2>Certifications &amp; training.</h2></div><p>A selection of completed professional certifications and technical training. Credential verification links can be added alongside individual certificates.</p></div>
+        <div class="section-head">
+          <div><div class="eyebrow">06 / Credentials</div><h2>Certifications &amp; training.</h2></div>
+          <p>A selection of completed professional certifications and technical training. Credential verification links can be added alongside individual certificates.</p>
+        </div>
+
         <div class="cert-grid">
           <div class="cert"><small>CISCO NETWORKING ACADEMY</small><strong>Cisco CyberOps Associate</strong><span>2026</span></div>
           <div class="cert"><small>CISCO NETWORKING ACADEMY</small><strong>CCNA</strong><span>2026</span></div>
@@ -166,38 +294,73 @@
     <section id="contact">
       <div class="wrap">
         <div class="contact-panel">
-          <div><div class="eyebrow">07 / Contact</div><h2>Let's work on making systems safer.</h2><p>I'm interested in cybersecurity, SOC, IT security, digital forensics, infrastructure, and security automation opportunities, as well as practical technical collaborations.</p><div class="contact-links"><a href="mailto:kimutaibrian.kb@gmail.com"><span>EMAIL</span>kimutaibrian.kb@gmail.com</a><a href="tel:+254722475396"><span>PHONE</span>+254 722 475 396</a><a href="https://www.linkedin.com/in/kimbriankim" target="_blank" rel="noopener noreferrer"><span>LINKEDIN</span>linkedin.com/in/kimbriankim ↗</a><a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer"><span>GITHUB</span>github.com/Kimutai43 ↗</a><a href="mailto:kimutaibrian.kb@gmail.com?subject=Request%20for%20CV"><span>RESUME</span>Request an updated CV ↗</a></div></div>
+          <div>
+            <div class="eyebrow">07 / Contact</div>
+            <h2>Let's work on making systems safer.</h2>
+            <p>I'm interested in cybersecurity, SOC, IT security, digital forensics, infrastructure, and security automation opportunities, as well as practical technical collaborations.</p>
+
+            <div class="contact-links">
+              <a href="mailto:kimutaibrian.kb@gmail.com"><span>EMAIL</span>kimutaibrian.kb@gmail.com</a>
+              <a href="tel:+254722475396"><span>PHONE</span>+254 722 475 396</a>
+              <a href="https://www.linkedin.com/in/kimbriankim" target="_blank" rel="noopener noreferrer"><span>LINKEDIN</span>linkedin.com/in/kimbriankim ↗</a>
+              <a href="https://github.com/Kimutai43" target="_blank" rel="noopener noreferrer"><span>GITHUB</span>github.com/Kimutai43 ↗</a>
+              <a href="Brian_Kimutai_Kochilinyang_CV.pdf" download><span>RESUME</span>Download my CV ↓</a>
+            </div>
+          </div>
+
           <form class="contact-form" id="contact-form">
-            <div class="field"><label for="name">YOUR NAME</label><input id="name" name="name" autocomplete="name" required maxlength="100" placeholder="Your name"></div>
-            <div class="field"><label for="email">EMAIL ADDRESS</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="160" placeholder="you@example.com"></div>
-            <div class="field"><label for="message">MESSAGE</label><textarea id="message" name="message" required maxlength="3000" placeholder="How can we work together?"></textarea></div>
-            <button class="button primary" type="submit" id="form-btn">Send message ↗</button><div class="form-result" id="form-result" role="status" aria-live="polite"></div>
+            <div class="field">
+              <label for="name">YOUR NAME</label>
+              <input id="name" name="name" autocomplete="name" required maxlength="100" placeholder="Your name">
+            </div>
+
+            <div class="field">
+              <label for="email">EMAIL ADDRESS</label>
+              <input id="email" name="email" type="email" autocomplete="email" required maxlength="160" placeholder="you@example.com">
+            </div>
+
+            <div class="field">
+              <label for="message">MESSAGE</label>
+              <textarea id="message" name="message" required maxlength="3000" placeholder="How can we work together?"></textarea>
+            </div>
+
+            <button class="button primary" type="submit" id="form-btn">Send message ↗</button>
+            <div class="form-result" id="form-result" role="status" aria-live="polite"></div>
             <p style="font-size:.68rem;margin:0;color:#8495aa">The form uses the existing Web3Forms endpoint. If it is unavailable, you can email me directly.</p>
           </form>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="wrap">© <span id="year">2026</span> Brian Kimutai · Built with HTML, CSS &amp; JavaScript · <a href=".well-known/security.txt">security.txt</a></div></footer>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="year">2026</span> Brian Kimutai · Built with HTML, CSS &amp; JavaScript · <a href=".well-known/security.txt">security.txt</a></div>
+  </footer>
 
   <script>
     // Mobile navigation
     const menuButton = document.getElementById('menu-btn');
     const navLinks = document.getElementById('navlinks');
+
     menuButton.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('open');
       menuButton.setAttribute('aria-expanded', String(isOpen));
       menuButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
       menuButton.textContent = isOpen ? '✕' : '☰';
     });
+
     navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      navLinks.classList.remove('open'); menuButton.setAttribute('aria-expanded','false'); menuButton.setAttribute('aria-label','Open navigation'); menuButton.textContent='☰';
+      navLinks.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-label', 'Open navigation');
+      menuButton.textContent = '☰';
     }));
 
     // Safe, text-only interactive terminal
     const terminal = document.getElementById('terminal-body');
     const terminalForm = document.getElementById('terminal-form');
     const terminalInput = document.getElementById('terminal-input');
+
     const terminalCommands = {
       help: 'Available commands: whoami, skills, projects, experience, contact, clear',
       whoami: 'Brian Kimutai — Cybersecurity & Digital Forensics Professional based in Kenya.',
@@ -206,15 +369,25 @@
       experience: 'Fortitrust Solutions (Security Engineer, volunteer) · KRA (IT & Security Analyst attachment) · Lendplus Credit (IT Support Technician, Security Focus) · Zetech University (Python Developer)',
       contact: 'Email: kimutaibrian.kb@gmail.com | LinkedIn: linkedin.com/in/kimbriankim | GitHub: github.com/Kimutai43'
     };
+
     terminalForm.addEventListener('submit', event => {
       event.preventDefault();
+
       const command = terminalInput.value.trim().toLowerCase();
       if (!command) return;
-      if (command === 'clear') { terminal.textContent = 'Terminal cleared. Type help to see available commands.'; terminalInput.value=''; return; }
+
+      if (command === 'clear') {
+        terminal.textContent = 'Terminal cleared. Type help to see available commands.';
+        terminalInput.value = '';
+        return;
+      }
+
       const line = document.createElement('div');
       const result = document.createElement('div');
+
       line.textContent = '$ ' + command;
       result.textContent = terminalCommands[command] || 'Command not found. Type help for available commands.';
+
       terminal.append(line, result);
       terminal.scrollTop = terminal.scrollHeight;
       terminalInput.value = '';
@@ -223,35 +396,63 @@
     // Project filters
     const filterButtons = document.querySelectorAll('.filter');
     const projects = document.querySelectorAll('.project');
+
     filterButtons.forEach(button => button.addEventListener('click', () => {
       const selected = button.dataset.filter;
+
       filterButtons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-      projects.forEach(project => { project.hidden = selected !== 'all' && project.dataset.category !== selected; });
+
+      projects.forEach(project => {
+        project.hidden = selected !== 'all' && project.dataset.category !== selected;
+      });
     }));
 
     // Contact form (Web3Forms)
     const contactForm = document.getElementById('contact-form');
     const formButton = document.getElementById('form-btn');
     const formResult = document.getElementById('form-result');
+
     contactForm.addEventListener('submit', async event => {
       event.preventDefault();
+
       const formData = new FormData(contactForm);
       const payload = Object.fromEntries(formData.entries());
+
       payload.access_key = '479d8402-bce6-4696-a3d9-a0086bac1d9a';
       payload.subject = 'New Portfolio Contact Message — Brian Kimutai';
-      formButton.disabled = true; formButton.textContent = 'Sending…'; formResult.textContent = '';
+
+      formButton.disabled = true;
+      formButton.textContent = 'Sending…';
+      formResult.textContent = '';
+
       try {
-        const response = await fetch('https://api.web3forms.com/submit', {method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body:JSON.stringify(payload)});
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
         const result = await response.json();
-        if (!response.ok || !result.success) throw new Error(result.message || 'Submission failed');
+
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || 'Submission failed');
+        }
+
         formResult.textContent = 'Message sent successfully. Thank you for reaching out.';
         contactForm.reset();
+
       } catch (error) {
         formResult.textContent = 'The form could not send your message. Please email kimutaibrian.kb@gmail.com directly.';
+
       } finally {
-        formButton.disabled = false; formButton.textContent = 'Send message ↗';
+        formButton.disabled = false;
+        formButton.textContent = 'Send message ↗';
       }
     });
+
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
